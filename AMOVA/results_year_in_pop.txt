@@ -1,0 +1,11 @@
+NEUTRAL
+              sigma2    P.value
+year        11.10296 0.09907802
+population   2.27106 0.04207916
+Error      397.03879         NA
+
+OUTLIER
+               sigma2     P.value
+year        1.2971671 0.271574569
+population  0.5724492 0.009359813
+Error      11.0021288          NA

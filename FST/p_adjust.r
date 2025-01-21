@@ -1,0 +1,7 @@
+iofiles <- c("~/fst_non.txt", "~/fst_non.padj")
+iofiles <- c("~/fst_txsplit.txt", "~/fst_txsplit.padj")
+vals <- read.table(iofiles[1], header = TRUE)
+neut <- p.adjust(vals$neutral, "fdr")
+outlier <- p.adjust(vals$outlier, "fdr")
+outdf <- data.frame(neutral = neut, outlier = outlier )
+write.csv(outdf, file = iofiles[2], row.names = FALSE, quote = FALSE)
