@@ -1,0 +1,17 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf out.14.recode.vcf
+	--exclude-positions outliers_vcf.txt
+	--remove kin_to_rm.txt
+	--recode-INFO-all
+	--out YFT.neutral.kinless.vcf
+	--recode
+
+Excluding individuals in 'exclude' list
+After filtering, kept 438 out of 441 Individuals
+Outputting VCF file...
+After filtering, kept 7818 out of a possible 7910 Sites
+Run Time = 8.00 seconds

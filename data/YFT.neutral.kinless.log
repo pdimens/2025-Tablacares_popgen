@@ -1,0 +1,27 @@
+PLINK v2.00a2.3LM 64-bit Intel (24 Jan 2020)
+Options in effect:
+  --allow-extra-chr 0
+  --const-fid
+  --export ped
+  --out YFT.neutral.kinless
+  --vcf YFT.neutral.kinless.vcf
+  --vcf-idspace-to _
+
+Hostname: snaggletooh
+Working directory: /mnt/win10/Users/Pavel/Omega/USM PhD/Projects/Active/Yellowfin Tuna/Popgen/Analyses/nonkin/data
+Start time: Mon Aug 23 15:34:29 2021
+
+Random number seed: 1629747269
+11531 MiB RAM detected; reserving 5765 MiB for main workspace.
+Using up to 8 compute threads.
+--vcf: 7818 variants scanned.
+--vcf: YFT.neutral.kinless-temporary.pgen + YFT.neutral.kinless-temporary.pvar
++ YFT.neutral.kinless-temporary.psam written.
+438 samples (0 females, 0 males, 438 ambiguous; 438 founders) loaded from
+YFT.neutral.kinless-temporary.psam.
+7818 variants loaded from YFT.neutral.kinless-temporary.pvar.
+Note: No phenotype data present.
+Error: Only VCF, oxford, bgen-1.x, haps, hapslegend, A, AD, A-transpose, and
+ind-major-bed output have been implemented so far.
+
+End time: Mon Aug 23 15:34:29 2021

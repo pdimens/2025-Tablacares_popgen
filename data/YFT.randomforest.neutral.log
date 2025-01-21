@@ -1,0 +1,1357 @@
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf YFT.neutral.kinless.vcf
+	--out YFT.randomforest.neutral
+	--plink
+
+Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1]">
+Warning: Expected at least 2 parts in INFO entry: ID=PRO,Number=1,Type=Float,Description="Reference allele observation count, with partial observations recorded fractionally">
+Warning: Expected at least 2 parts in INFO entry: ID=PAO,Number=A,Type=Float,Description="Alternate allele observations, with partial observations recorded fractionally">
+Warning: Expected at least 2 parts in INFO entry: ID=SRP,Number=1,Type=Float,Description="Strand balance probability for the reference allele: Phred-scaled upper-bounds estimate of the probability of observing the deviation between SRF and SRR given E(SRF/SRR) ~ 0.5, derived using Hoeffding's inequality">
+Warning: Expected at least 2 parts in INFO entry: ID=SAP,Number=A,Type=Float,Description="Strand balance probability for the alternate allele: Phred-scaled upper-bounds estimate of the probability of observing the deviation between SAF and SAR given E(SAF/SAR) ~ 0.5, derived using Hoeffding's inequality">
+Warning: Expected at least 2 parts in INFO entry: ID=AB,Number=A,Type=Float,Description="Allele balance at heterozygous sites: a number between 0 and 1 representing the ratio of reads showing the reference allele to all reads, considering only reads from individuals called as heterozygous">
+Warning: Expected at least 2 parts in INFO entry: ID=ABP,Number=A,Type=Float,Description="Allele balance probability at heterozygous sites: Phred-scaled upper-bounds estimate of the probability of observing the deviation between ABR and ABA given E(ABR/ABA) ~ 0.5, derived using Hoeffding's inequality">
+Warning: Expected at least 2 parts in INFO entry: ID=RPP,Number=A,Type=Float,Description="Read Placement Probability: Phred-scaled upper-bounds estimate of the probability of observing the deviation between RPL and RPR given E(RPL/RPR) ~ 0.5, derived using Hoeffding's inequality">
+Warning: Expected at least 2 parts in INFO entry: ID=RPPR,Number=1,Type=Float,Description="Read Placement Probability for reference observations: Phred-scaled upper-bounds estimate of the probability of observing the deviation between RPL and RPR given E(RPL/RPR) ~ 0.5, derived using Hoeffding's inequality">
+Warning: Expected at least 2 parts in INFO entry: ID=EPP,Number=A,Type=Float,Description="End Placement Probability: Phred-scaled upper-bounds estimate of the probability of observing the deviation between EL and ER given E(EL/ER) ~ 0.5, derived using Hoeffding's inequality">
+Warning: Expected at least 2 parts in INFO entry: ID=EPPR,Number=1,Type=Float,Description="End Placement Probability for reference observations: Phred-scaled upper-bounds estimate of the probability of observing the deviation between EL and ER given E(EL/ER) ~ 0.5, derived using Hoeffding's inequality">
+Warning: Expected at least 2 parts in INFO entry: ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+Warning: Expected at least 2 parts in INFO entry: ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+Warning: Expected at least 2 parts in INFO entry: ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+Warning: Expected at least 2 parts in INFO entry: ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+Warning: Expected at least 2 parts in INFO entry: ID=TYPE,Number=A,Type=String,Description="The type of allele, either snp, mnp, ins, del, or complex.">
+Warning: Expected at least 2 parts in INFO entry: ID=CIGAR,Number=A,Type=String,Description="The extended CIGAR representation of each alternate allele, with the exception that '=' is replaced by 'M' to ease VCF parsing.  Note that INDEL alleles do not have the first matched base (which is provided by default, per the spec) referred to by the CIGAR.">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GQ,Number=1,Type=Float,Description="Genotype Quality, the Phred-scaled marginal (or unconditional) probability of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+After filtering, kept 438 out of 438 Individuals
+Writing PLINK PED and MAP files ... 
+
+Unrecognized values used for CHROM: Talbacares_contig_2 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_9 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_14 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_16 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_19 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_26 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_27 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_34 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_35 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_38 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_40 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_68 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_74 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_86 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_105 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_112 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_113 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_115 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_122 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_123 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_124 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_127 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_139 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_149 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_172 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_174 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_175 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_181 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_188 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_196 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_200 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_208 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_231 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_233 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_241 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_247 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_254 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_255 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_259 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_266 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_276 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_279 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_280 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_287 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_293 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_294 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_310 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_312 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_342 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_348 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_350 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_356 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_357 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_378 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_388 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_395 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_407 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_419 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_422 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_428 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_429 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_442 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_454 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_461 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_482 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_498 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_500 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_503 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_506 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_512 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_514 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_519 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_530 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_541 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_552 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_565 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_571 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_578 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_583 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_591 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_595 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_600 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_601 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_615 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_623 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_625 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_643 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_645 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_653 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_662 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_666 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_667 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_699 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_704 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_748 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_770 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_776 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_793 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_796 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_799 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_804 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_807 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_813 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_827 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_828 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_847 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_851 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_854 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_858 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_866 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_869 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_879 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_885 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_890 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_891 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_897 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_903 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_910 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_912 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_922 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_923 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_926 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_929 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_956 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_966 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_968 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_981 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_997 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1009 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1024 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1031 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1034 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1037 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1055 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1062 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1066 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1075 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1077 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1092 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1095 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1134 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1135 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1140 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1141 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1152 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1155 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1178 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1179 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1181 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1185 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1188 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1193 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1229 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1231 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1237 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1251 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1253 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1254 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1256 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1259 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1266 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1270 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1271 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1272 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1275 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1281 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1283 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1290 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1304 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1320 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1338 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1352 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1383 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1393 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1400 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1402 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1421 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1447 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1448 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1450 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1451 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1452 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1454 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1459 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1475 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1489 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1510 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1519 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1521 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1522 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1546 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1549 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1558 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1571 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1574 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1575 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1580 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1582 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1583 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1587 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1604 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1605 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1606 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1607 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1623 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1628 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1638 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1641 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1646 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1670 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1690 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1712 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1755 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1792 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1822 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1835 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1838 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1851 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1855 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1858 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1874 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1881 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1893 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1908 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1909 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1913 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1914 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1922 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1927 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1931 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1933 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1941 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1945 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1947 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1959 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1961 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1973 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1974 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1976 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1986 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_1987 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2054 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2069 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2078 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2084 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2088 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2111 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2114 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2116 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2128 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2136 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2142 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2150 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2153 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2154 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2162 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2163 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2171 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2177 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2185 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2204 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2214 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2215 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2216 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2259 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2264 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2265 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2287 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2325 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2329 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2342 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2346 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2349 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2355 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2363 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2365 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2375 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2385 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2399 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2401 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2409 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2415 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2422 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2425 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2427 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2436 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2443 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2445 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2450 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2456 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2467 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2472 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2477 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2488 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2489 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2509 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2520 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2521 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2524 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2526 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2529 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2533 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2542 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2554 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2558 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2562 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2567 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2572 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2573 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2592 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2625 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2656 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2657 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2658 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2665 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2677 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2682 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2695 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2696 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2703 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2712 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2717 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2728 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2736 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2751 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2759 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2762 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2763 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2769 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2786 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2789 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2792 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2803 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2808 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2825 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2830 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2834 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2838 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2850 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2852 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2865 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2870 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2875 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2887 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2893 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2894 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2895 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2897 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2911 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2927 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2928 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2932 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2951 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2952 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2954 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2955 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2959 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2966 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2982 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2983 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_2998 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3012 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3018 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3032 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3036 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3037 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3051 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3052 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3059 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3067 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3075 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3091 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3111 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3112 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3122 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3126 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3142 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3146 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3153 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3157 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3159 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3160 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3163 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3167 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3181 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3184 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3185 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3198 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3205 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3206 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3210 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3216 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3218 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3222 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3237 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3245 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3248 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3256 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3258 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3269 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3280 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3282 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3290 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3300 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3305 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3308 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3319 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3335 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3338 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3348 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3355 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3362 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3368 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3380 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3398 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3400 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3401 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3421 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3437 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3458 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3460 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3461 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3463 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3485 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3490 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3510 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3520 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3522 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3530 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3537 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3552 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3561 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3565 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3567 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3570 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3578 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3586 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3587 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3604 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3606 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3611 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3617 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3629 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3637 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3641 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3644 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3649 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3660 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3683 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3685 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3686 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3688 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3690 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3692 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3693 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3701 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3710 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3716 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3723 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3725 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3736 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3742 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3760 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3803 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3808 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3814 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3819 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3825 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3841 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3846 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3870 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3872 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3886 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3893 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3901 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3907 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3911 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3913 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3915 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3916 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3926 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3932 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3934 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3935 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3942 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3943 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3944 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3951 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3961 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3964 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3974 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_3986 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4002 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4004 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4033 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4034 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4070 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4077 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4079 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4081 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4099 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4113 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4120 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4130 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4132 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4146 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4152 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4159 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4162 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4165 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4168 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4175 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4183 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4185 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4187 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4198 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4199 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4204 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4205 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4207 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4222 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4227 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4260 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4261 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4271 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4297 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4319 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4321 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4336 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4381 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4382 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4401 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4408 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4421 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4425 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4426 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4429 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4433 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4442 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4452 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4453 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4455 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4459 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4463 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4477 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4478 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4481 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4483 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4486 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4490 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4493 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4494 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4496 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4502 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4504 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4508 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4532 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4543 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4544 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4557 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4558 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4562 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4569 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4575 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4577 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4587 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4601 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4606 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4609 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4616 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4617 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4686 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4688 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4689 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4690 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4692 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4705 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4710 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4718 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4721 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4723 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4726 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4729 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4734 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4743 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4749 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4753 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4755 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4760 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4764 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4765 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4767 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4791 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4803 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4813 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4814 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4820 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4824 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4827 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4830 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4832 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4835 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4849 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4850 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4853 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4854 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4855 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4861 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4875 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4883 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4895 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4926 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4956 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4963 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4969 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4973 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4976 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4984 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4991 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4992 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_4995 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5000 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5001 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5016 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5054 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5055 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5081 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5083 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5103 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5105 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5113 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5117 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5121 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5122 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5150 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5179 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5182 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_contig_5190 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_1 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_2 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_3 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_4 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_5 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_6 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_7 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_8 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_9 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_10 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_11 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_12 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_13 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_14 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_15 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_16 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_17 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_18 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_19 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_20 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_21 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_22 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_23 - Replacing with 0.
+
+Unrecognized values used for CHROM: Talbacares_lg_24 - Replacing with 0.
+Done.
+After filtering, kept 7818 out of a possible 7818 Sites
+Run Time = 1.00 seconds
