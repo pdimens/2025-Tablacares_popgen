@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+if [ -z $1 ]; then
+echo "Convert a bcf file into PLINK format using PLINK2"
+echo "[usage]: bcf2plink <input_bcf>"
+fi
+
+OUTNAME=$(basename $1 .bcf)
+
+##plink2 --bcf $1 \
+##    --vcf-idspace-to _ \
+##    --const-fid \
+##    --allow-extra-chr 0 \
+##    --recode \
+##    --out $OUTNAME
+plink2 --bcf $1 --make-bed --out ${OUTNAME} > ${OUTNAME}.log

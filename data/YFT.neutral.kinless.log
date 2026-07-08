@@ -1,27 +1,29 @@
-PLINK v2.00a2.3LM 64-bit Intel (24 Jan 2020)
+PLINK v2.0.0-a.6.9LM 64-bit Intel (29 Jan 2025)
 Options in effect:
-  --allow-extra-chr 0
-  --const-fid
-  --export ped
+  --bcf YFT.neutral.kinless.bcf
+  --make-bed
   --out YFT.neutral.kinless
-  --vcf YFT.neutral.kinless.vcf
-  --vcf-idspace-to _
 
-Hostname: snaggletooh
-Working directory: /mnt/win10/Users/Pavel/Omega/USM PhD/Projects/Active/Yellowfin Tuna/Popgen/Analyses/nonkin/data
-Start time: Mon Aug 23 15:34:29 2021
+Hostname: Gemini-L
+Working directory: /home/pdimens/Projects/2025-Tablacares_popgen/data
+Start time: Wed Jul  8 15:57:12 2026
 
-Random number seed: 1629747269
-11531 MiB RAM detected; reserving 5765 MiB for main workspace.
+Random number seed: 1783540632
+15681 MiB RAM detected, ~7029 available; reserving 6965 MiB for main workspace.
 Using up to 8 compute threads.
---vcf: 7818 variants scanned.
---vcf: YFT.neutral.kinless-temporary.pgen + YFT.neutral.kinless-temporary.pvar
-+ YFT.neutral.kinless-temporary.psam written.
-438 samples (0 females, 0 males, 438 ambiguous; 438 founders) loaded from
+--bcf: 7818 variants scanned.
+--bcf: YFT.neutral.kinless-temporary.pgen +
+YFT.neutral.kinless-temporary.pvar.zst + YFT.neutral.kinless-temporary.psam
+written.
+418 samples (0 females, 0 males, 418 ambiguous; 418 founders) loaded from
 YFT.neutral.kinless-temporary.psam.
-7818 variants loaded from YFT.neutral.kinless-temporary.pvar.
+Note: 662 nonstandard chromosome codes present.
+7818 variants loaded from YFT.neutral.kinless-temporary.pvar.zst.
 Note: No phenotype data present.
-Error: Only VCF, oxford, bgen-1.x, haps, hapslegend, A, AD, A-transpose, and
-ind-major-bed output have been implemented so far.
+Writing YFT.neutral.kinless.fam ... done.
+Writing YFT.neutral.kinless.bim ... done.
+Writing YFT.neutral.kinless.bed ... done.
 
-End time: Mon Aug 23 15:34:29 2021
+End time: Wed Jul  8 15:57:12 2026
+eutral.kinless.bed ... 0%done.
+End time: Wed Jul  8 15:57:12 2026
