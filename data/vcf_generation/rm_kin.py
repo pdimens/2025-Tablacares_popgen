@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-with open("kin_to_rm.txt") as f:
+with open("../kin_to_rm.txt") as f:
     kinrm = f.read().splitlines()
 
 sentinel = False
@@ -19,7 +19,7 @@ with open("YFT.pcrelate.kinrm.haplo.gen") as f:
 sentinel = False
 
 with open("YFT.snp.kinrm.pcrelate.gen") as f:
-    with open("CORRECTYFT.YFT.snp.kinrm.pcrelate.gen", "w") as o:
+    with open("CORRECTYFT.snp.kinrm.pcrelate.gen", "w") as o:
         for i in f:
             for k in kinrm:
                 if i.startswith(k):
