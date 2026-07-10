@@ -1,12 +1,13 @@
 #! /usr/bin/env bash
 
-BayeScan2 $1 \
+bayescan_2.1 ../../data/YFT.kinless.bayescan \
 	-o yft_bscan \
+	-snp \
 	-n 15000 \
 	-pilot 15000 \
 	-burn 100000 \
 	-pr_odds 100 \
-	-threads $2 \
+	-threads 6 \
 
 
 #
