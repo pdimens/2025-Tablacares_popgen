@@ -12,6 +12,7 @@ CSV.write("locbyloc.global.nei.fst", global_fst)
 
 locbyloc = _pairwise_Hudson(data)
 CSV.write("locbyloc.pairwise.hudson.fst", locbyloc)
+
 function _pairwise_Hudson(data::PopData)
     !isbiallelic(data) && throw(error("Data must be biallelic to use the Hudson estimator"))
     idx_pdata = groupby(data.loci, :population)
